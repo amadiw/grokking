@@ -20,13 +20,12 @@ const func = (arr, k) => {
     end;
 
   for (end = 0; end < arr.length; end++) {
-    if(arr[end] === 1){
-
+    if (arr[end] === 1) {
       maxRepeat += arr[end];
     }
 
     // let winSize = end - start + 1
-    if ((end - start + 1 - maxRepeat) > k) {
+    if (end - start + 1 - maxRepeat > k) {
       if (arr[start] === 1) {
         maxRepeat--;
       }
